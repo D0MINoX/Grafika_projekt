@@ -1,2 +1,12 @@
 ﻿  GK2025-WrapperAPI.cpp
+C:\Users\jedrz\source\repos\GK2025_NATIVE\GK2025_NATIVE\GK2025-Pliki.cpp(500,11): warning C4101: "kolor5bit": lokalna zmienna, do której nie istnieje odwołanie
+  (kompilowanie pliku źródłowego „GK2025-WrapperAPI.cpp”)
+  
+GK2025-Pliki.obj : warning LNK4006: element "void __cdecl zapiszPlik5(void)" (?zapiszPlik5@@YAXXZ) jest już zdefiniowany w elemencie GK2025-WrapperAPI.obj; druga definicja została zignorowana
+GK2025-Pliki.obj : warning LNK4006: element "void __cdecl odczytajPlik5(void)" (?odczytajPlik5@@YAXXZ) jest już zdefiniowany w elemencie GK2025-WrapperAPI.obj; druga definicja została zignorowana
+GK2025-Pliki.obj : warning LNK4006: element "void __cdecl opt_zapiszPlik5(void)" (?opt_zapiszPlik5@@YAXXZ) jest już zdefiniowany w elemencie GK2025-WrapperAPI.obj; druga definicja została zignorowana
+GK2025-Pliki.obj : warning LNK4006: element "void __cdecl opt_odczytajPlik5(void)" (?opt_odczytajPlik5@@YAXXZ) jest już zdefiniowany w elemencie GK2025-WrapperAPI.obj; druga definicja została zignorowana
+GK2025-Pliki.obj : warning LNK4006: element "void __cdecl zapiszPlikv0(void)" (?zapiszPlikv0@@YAXXZ) jest już zdefiniowany w elemencie GK2025-WrapperAPI.obj; druga definicja została zignorowana
+GK2025-Pliki.obj : warning LNK4006: element "void __cdecl zapiszPlik(void)" (?zapiszPlik@@YAXXZ) jest już zdefiniowany w elemencie GK2025-WrapperAPI.obj; druga definicja została zignorowana
+GK2025-Pliki.obj : warning LNK4006: element "void __cdecl odczytajPlik(void)" (?odczytajPlik@@YAXXZ) jest już zdefiniowany w elemencie GK2025-WrapperAPI.obj; druga definicja została zignorowana
   GK2025_NATIVE.vcxproj -> C:\Users\jedrz\source\repos\GK2025_NATIVE\GK2025_NATIVE\x64\Debug\GK2025_NATIVE.lib

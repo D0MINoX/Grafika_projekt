@@ -18,5 +18,10 @@ Class GKWrapper: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     LoadBMP(String, Int32, Int32): PrivateScope, Public, HideBySig
     palette_imposeed(): PrivateScope, Public, HideBySig
     palette_imposeed_gray(): PrivateScope, Public, HideBySig
+    palette_imposeed_bit(): PrivateScope, Public, HideBySig
+    palette_median_cut(): PrivateScope, Public, HideBySig
+    palette_median_cut_gray(): PrivateScope, Public, HideBySig
     bayer_dithering(): PrivateScope, Public, HideBySig
     bayer_dithering_gray(): PrivateScope, Public, HideBySig
+    save_file(): PrivateScope, Public, HideBySig
+    load_file(): PrivateScope, Public, HideBySig

@@ -21,30 +21,29 @@
         <Button Content="Start SDL" Click="StartSDL_Click" Width="120" Height="40"/>
 
         <Button Content="Załaduj obrazej" Click="ladujBMP_Click" Width="120" Height="40" Grid.Column="1" Grid.Row="1"/>
-        <ComboBox x:Name="image_selection" Width="200" Height="20" Margin="10" Grid.Row="1">
-            <ComboBoxItem Content="obraz 1" />
-            <ComboBoxItem Content="obraz 2" />
-            <ComboBoxItem Content="obraz 3" />
-            <ComboBoxItem Content="obraz 4" />
-            <ComboBoxItem Content="obraz 5" />
-            <ComboBoxItem Content="obraz 6" />
-            <ComboBoxItem Content="obraz 7" />
-            <ComboBoxItem Content="obraz 8" />
-            <ComboBoxItem Content="obraz 9" />
-        </ComboBox>
-        
+        <ComboBox x:Name="image_selection" Width="200" Height="20" Margin="10" Grid.Row="1"/>
+
+
         <Button Content="paleta" Click="paleta_Click" Width="120" Height="40" Grid.Column="1" Grid.Row="2"/>
         <ComboBox x:Name="paleta_selection" Width="200" Height="20" Margin="10" Grid.Row="2">
             <ComboBoxItem Content="paleta narzucona" />
             <ComboBoxItem Content="paleta narzucona szara" />
-            <ComboBoxItem Content="......." />
+            <ComboBoxItem Content="paleta MedianCut" />
+            <ComboBoxItem Content="paleta MedianCut szara" />
+            <ComboBoxItem Content="paleta narzucona ucięcie bitowe" />
+            <ComboBoxItem Content="..........." />
         </ComboBox>
-
+        <TextBlock x:Name="loading_block" Visibility="Collapsed" Text="Ładowanie...." Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center"/>
+       
         <Button Content="dithering" Click="dithering_Click" Width="120" Height="40" Grid.Column="1" Grid.Row="3"/>
         <ComboBox x:Name="dithering_selection" Width="200" Height="20" Margin="10" Grid.Row="3">
             <ComboBoxItem Content="bayer szary" />
             <ComboBoxItem Content="bayer kolorowy" />
             <ComboBoxItem Content="......." />
         </ComboBox>
+
+        <Button Content="dodaj plik" Click="AddFile_Click" Width="120" Height="40" Grid.Column="2" Grid.Row="1"/>
+        <Button Content="zapisz jako blik binarny" Click="SafeFileBin_Click" Width="120" Height="40" Grid.Column="2" Grid.Row="2"/>
+        <Button Content="odczytaj plik binarny" Click="LoadFileBin_Click" Width="120" Height="40" Grid.Column="2" Grid.Row="3"/>
     </Grid>
 </Window>

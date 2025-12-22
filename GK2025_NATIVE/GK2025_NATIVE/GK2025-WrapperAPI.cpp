@@ -4,6 +4,8 @@
 #include "GK2025-Zmienne.h"
 #include <cstdlib>
 #include "GK2025-Paleta.h"
+#include "GK2025-MedianCut.h"
+#include "GK2025-Pliki.cpp"
 
 
 
@@ -66,6 +68,10 @@ void laduj_BMP(const char* nazwa,int x,int y) {
 	ladujBMP(nazwa, x, y);
 }
 
+void paletaNarzuconaBitAPI(){
+    narzuconaV1();
+}
+
 void paletanarzuconaAPI()
 {
 	paletaNarzucona();
@@ -76,6 +82,16 @@ void paletaNarzuconaSzaraAPI()
     paletaNarzuconaSzary();
 }
 
+void paletaMedianCutAPI()
+{
+	paletaMedianCut();
+}
+
+void paletaMedianCutSzaryAPI()
+{
+    paletaMedianCutBW();
+}
+
 void bayerDitheringAPI()
 {
 	dithering_bayer_color();
@@ -84,4 +100,14 @@ void bayerDitheringAPI()
 void bayerDitheringSzaryAPI()
 {
     dithering_bayer();
+}
+
+void zapiszPlikAPI()
+{
+	zapiszPlik();
+}
+
+void odczytajPlikAPI()
+{
+	odczytajPlik();
 }

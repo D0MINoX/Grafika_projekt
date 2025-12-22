@@ -22,6 +22,21 @@ void GKWrapper::palette_imposeed_gray()
 	paletaNarzuconaSzaraAPI();
 }
 
+void GKWrapper::palette_imposeed_bit()
+{
+	paletaNarzuconaBitAPI();
+}
+
+void GKWrapper::palette_median_cut()
+{
+	paletaMedianCutAPI();
+}
+
+void GKWrapper::palette_median_cut_gray()
+{
+	paletaMedianCutSzaryAPI();
+}
+
 void GKWrapper::bayer_dithering()
 {
 	bayerDitheringAPI();
@@ -30,5 +45,15 @@ void GKWrapper::bayer_dithering()
 void GKWrapper::bayer_dithering_gray()
 {
 	bayerDitheringSzaryAPI();
+}
+
+void GKWrapper::save_file()
+{
+	zapiszPlikAPI();
+}
+
+void GKWrapper::load_file()
+{
+	odczytajPlikAPI();
 }
 
