@@ -1,0 +1,4 @@
+﻿  GKWrapper.cpp
+  AssemblyInfo.obj : napotkano moduł MSIL; konsolidowanie przyrostowe jest wyłączone dla modułów MSIL; zostanie wykonana pełna konsolidacja
+GK2025_NATIVE.lib(GK2025-WrapperAPI.obj) : warning LNK4075: zignorowano opcję "/EDITANDCONTINUE" z powodu określenia opcji "/INCREMENTAL:NO"
+  GK2025_CLI.vcxproj -> C:\Users\jedrz\source\repos\GK2025_CLI\GK2025_CLI\GK2025_CLI.dll

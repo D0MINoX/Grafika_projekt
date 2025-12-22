@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "GK2025_WPF/1.0.0": {
+        "dependencies": {
+          "GK2025_CLI": "1.0.0"
+        },
+        "runtime": {
+          "GK2025_WPF.dll": {}
+        }
+      },
+      "GK2025_CLI/1.0.0": {
+        "runtime": {
+          "GK2025_CLI.dll": {
+            "assemblyVersion": "1.0.9486.37907",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GK2025_WPF/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GK2025_CLI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

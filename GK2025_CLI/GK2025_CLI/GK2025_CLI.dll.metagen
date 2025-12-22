@@ -1,0 +1,22 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly GK2025_CLI, Version=1.0.*, Culture=Język niezmienny (kraj niezmienny): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class GK2025CLI.Class1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class GKWrapper: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    StartSDL(): PrivateScope, Public, HideBySig
+    LoadBMP(String, Int32, Int32): PrivateScope, Public, HideBySig
+    palette_imposeed(): PrivateScope, Public, HideBySig
+    palette_imposeed_gray(): PrivateScope, Public, HideBySig
+    bayer_dithering(): PrivateScope, Public, HideBySig
+    bayer_dithering_gray(): PrivateScope, Public, HideBySig

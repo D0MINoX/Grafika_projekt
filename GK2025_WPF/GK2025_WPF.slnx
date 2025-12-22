@@ -1,0 +1,12 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="../GK2025_CLI/GK2025_CLI/GK2025_CLI.vcxproj" Id="91a0624f-8505-59bb-cd90-7b3ce2f25a14">
+    <BuildDependency Project="../GK2025_NATIVE/GK2025_NATIVE/GK2025_NATIVE.vcxproj" />
+  </Project>
+  <Project Path="../GK2025_NATIVE/GK2025_NATIVE/GK2025_NATIVE.vcxproj" Id="8116d0d1-2eb7-4a43-8815-34dbee6a248f" />
+  <Project Path="GK2025_WPF/GK2025_WPF.csproj" />
+</Solution>

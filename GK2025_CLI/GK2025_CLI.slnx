@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="../GK2025_NATIVE/GK2025_NATIVE/GK2025_NATIVE.vcxproj" Id="8116d0d1-2eb7-4a43-8815-34dbee6a248f" />
+  <Project Path="GK2025_CLI/GK2025_CLI.vcxproj" />
+</Solution>

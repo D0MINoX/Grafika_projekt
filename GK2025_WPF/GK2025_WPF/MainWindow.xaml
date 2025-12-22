@@ -1,0 +1,50 @@
+﻿<Window x:Class="GK2025_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GK2025_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Button Content="Start SDL" Click="StartSDL_Click" Width="120" Height="40"/>
+
+        <Button Content="Załaduj obrazej" Click="ladujBMP_Click" Width="120" Height="40" Grid.Column="1" Grid.Row="1"/>
+        <ComboBox x:Name="image_selection" Width="200" Height="20" Margin="10" Grid.Row="1">
+            <ComboBoxItem Content="obraz 1" />
+            <ComboBoxItem Content="obraz 2" />
+            <ComboBoxItem Content="obraz 3" />
+            <ComboBoxItem Content="obraz 4" />
+            <ComboBoxItem Content="obraz 5" />
+            <ComboBoxItem Content="obraz 6" />
+            <ComboBoxItem Content="obraz 7" />
+            <ComboBoxItem Content="obraz 8" />
+            <ComboBoxItem Content="obraz 9" />
+        </ComboBox>
+        
+        <Button Content="paleta" Click="paleta_Click" Width="120" Height="40" Grid.Column="1" Grid.Row="2"/>
+        <ComboBox x:Name="paleta_selection" Width="200" Height="20" Margin="10" Grid.Row="2">
+            <ComboBoxItem Content="paleta narzucona" />
+            <ComboBoxItem Content="paleta narzucona szara" />
+            <ComboBoxItem Content="......." />
+        </ComboBox>
+
+        <Button Content="dithering" Click="dithering_Click" Width="120" Height="40" Grid.Column="1" Grid.Row="3"/>
+        <ComboBox x:Name="dithering_selection" Width="200" Height="20" Margin="10" Grid.Row="3">
+            <ComboBoxItem Content="bayer szary" />
+            <ComboBoxItem Content="bayer kolorowy" />
+            <ComboBoxItem Content="......." />
+        </ComboBox>
+    </Grid>
+</Window>
