@@ -111,3 +111,11 @@ void odczytajPlikAPI()
 {
 	odczytajPlik();
 }
+void zapiszPlik5API(char identyfikator)
+{
+    zapiszPlik5(identyfikator);
+}
+void odczytajPlik5API()
+{
+    odczytajPlik5();
+}

@@ -95,16 +95,16 @@ void odczytajPlik(){
 Funkcja zapiszPlik5 zapisuje dane o obrazie do pliku binarnego obraz5.bin, jednoczeœnie konwertuj¹c dane na palete 5-bitow¹
 */
 
-void zapiszPlik5(){
+void zapiszPlik5(char identyfikator) {
     SDL_Color kolor;
     Uint8 kolor5bit;
     Uint16 szerokoscObrazka=szerokosc/2;
     Uint16 wysokoscObrazka=wysokosc/2;
     Uint8 ileBitow=5;
-    char identyfikator='5';
+    char id = identyfikator;
     cout<<"zapis pliku 'obraz5.bin' metoda write()"<<endl;
     ofstream wyjscie("obraz5.bin",ios::binary);
-    wyjscie.write((char*)&identyfikator,sizeof(char));
+    wyjscie.write((char*)&id,sizeof(char));
     wyjscie.write((char*)&szerokoscObrazka,sizeof(Uint16));
     wyjscie.write((char*)&wysokoscObrazka,sizeof(Uint16));
     wyjscie.write((char*)&ileBitow,sizeof(Uint8));

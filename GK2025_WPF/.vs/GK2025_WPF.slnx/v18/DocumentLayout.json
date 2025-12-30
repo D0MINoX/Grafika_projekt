@@ -7,7 +7,11 @@
       "RelativeMoniker": "D:0:0:{3686B05C-DE53-2624-8CF9-8377A95B162D}|GK2025_WPF\\GK2025_WPF.csproj|solutionrelative:gk2025_wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8116D0D1-2EB7-4A43-8815-34DBEE6A248F}|..\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025_NATIVE.vcxproj|C:\\Users\\jedrz\\source\\repos\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-WrapperAPI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{8116D0D1-2EB7-4A43-8815-34DBEE6A248F}|..\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025_NATIVE.vcxproj|C:\\Users\\jedrz\\source\\repos\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-Pliki.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3686B05C-DE53-2624-8CF9-8377A95B162D}|GK2025_WPF\\GK2025_WPF.csproj|c:\\users\\jedrz\\source\\repos\\gk2025_wpf\\gk2025_wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3686B05C-DE53-2624-8CF9-8377A95B162D}|GK2025_WPF\\GK2025_WPF.csproj|solutionrelative:gk2025_wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8116D0D1-2EB7-4A43-8815-34DBEE6A248F}|..\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025_NATIVE.vcxproj|C:\\Users\\jedrz\\source\\repos\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-WrapperAPI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -19,8 +23,10 @@
       "AbsoluteMoniker": "D:0:0:{91A0624F-8505-59BB-CD90-7B3CE2F25A14}|..\\GK2025_CLI\\GK2025_CLI\\GK2025_CLI.vcxproj|C:\\Users\\jedrz\\source\\repos\\GK2025_CLI\\GK2025_CLI\\GKWrapper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3686B05C-DE53-2624-8CF9-8377A95B162D}|GK2025_WPF\\GK2025_WPF.csproj|c:\\users\\jedrz\\source\\repos\\gk2025_wpf\\gk2025_wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3686B05C-DE53-2624-8CF9-8377A95B162D}|GK2025_WPF\\GK2025_WPF.csproj|solutionrelative:gk2025_wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{8116D0D1-2EB7-4A43-8815-34DBEE6A248F}|..\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025_NATIVE.vcxproj|C:\\Users\\jedrz\\source\\repos\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-Pliki.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8116D0D1-2EB7-4A43-8815-34DBEE6A248F}|..\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025_NATIVE.vcxproj|C:\\Users\\jedrz\\source\\repos\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-WrapperAPI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +36,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 171,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\jedrz\\source\\repos\\GK2025_WPF\\GK2025_WPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "GK2025_WPF\\MainWindow.xaml",
@@ -47,65 +53,91 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GK2025-Pliki.cpp",
+              "DocumentMoniker": "C:\\Users\\jedrz\\source\\repos\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-Pliki.cpp",
+              "RelativeDocumentMoniker": "..\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-Pliki.cpp",
+              "ToolTip": "C:\\Users\\jedrz\\source\\repos\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-Pliki.cpp",
+              "RelativeToolTip": "..\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-Pliki.cpp",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAHsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-30T23:26:03.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\jedrz\\source\\repos\\GK2025_WPF\\GK2025_WPF\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "GK2025_WPF\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\jedrz\\source\\repos\\GK2025_WPF\\GK2025_WPF\\MainWindow.xaml.cs",
               "RelativeToolTip": "GK2025_WPF\\MainWindow.xaml.cs",
-              "ViewState": "AgIAALkAAAAAAAAAAAAAANAAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAALsAAAAAAAAAAAAewNEAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T13:13:02.509Z",
+              "WhenOpened": "2025-12-30T23:02:43.571Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
+              "Title": "GK2025-Pliki.h",
+              "DocumentMoniker": "C:\\Users\\jedrz\\source\\repos\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-Pliki.h",
+              "RelativeDocumentMoniker": "..\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-Pliki.h",
+              "ToolTip": "C:\\Users\\jedrz\\source\\repos\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-Pliki.h",
+              "RelativeToolTip": "..\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-Pliki.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-30T22:59:58.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "GKWrapper.h",
               "DocumentMoniker": "C:\\Users\\jedrz\\source\\repos\\GK2025_CLI\\GK2025_CLI\\GKWrapper.h",
               "RelativeDocumentMoniker": "..\\GK2025_CLI\\GK2025_CLI\\GKWrapper.h",
               "ToolTip": "C:\\Users\\jedrz\\source\\repos\\GK2025_CLI\\GK2025_CLI\\GKWrapper.h",
               "RelativeToolTip": "..\\GK2025_CLI\\GK2025_CLI\\GKWrapper.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-12-22T13:07:56.626Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "GKWrapper.cpp",
               "DocumentMoniker": "C:\\Users\\jedrz\\source\\repos\\GK2025_CLI\\GK2025_CLI\\GKWrapper.cpp",
               "RelativeDocumentMoniker": "..\\GK2025_CLI\\GK2025_CLI\\GKWrapper.cpp",
               "ToolTip": "C:\\Users\\jedrz\\source\\repos\\GK2025_CLI\\GK2025_CLI\\GKWrapper.cpp",
               "RelativeToolTip": "..\\GK2025_CLI\\GK2025_CLI\\GKWrapper.cpp",
-              "ViewState": "AgIAABwAAAAAAAAAAAAhwDIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAADgvzwAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-22T13:07:48.805Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "GK2025-WrapperAPI.h",
               "DocumentMoniker": "C:\\Users\\jedrz\\source\\repos\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-WrapperAPI.h",
               "RelativeDocumentMoniker": "..\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-WrapperAPI.h",
               "ToolTip": "C:\\Users\\jedrz\\source\\repos\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-WrapperAPI.h",
               "RelativeToolTip": "..\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-WrapperAPI.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-12-22T13:03:53.228Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "GK2025-WrapperAPI.cpp",
               "DocumentMoniker": "C:\\Users\\jedrz\\source\\repos\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-WrapperAPI.cpp",
               "RelativeDocumentMoniker": "..\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-WrapperAPI.cpp",
               "ToolTip": "C:\\Users\\jedrz\\source\\repos\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-WrapperAPI.cpp",
               "RelativeToolTip": "..\\GK2025_NATIVE\\GK2025_NATIVE\\GK2025-WrapperAPI.cpp",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAhwGwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-22T13:03:16.714Z",
               "EditorCaption": ""

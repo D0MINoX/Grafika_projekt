@@ -207,15 +207,25 @@ namespace GK2025_WPF
             }
             else
             {
-                gk.save_file();
-                MessageBox.Show("Zapisano do pliku obrazRGB.bin");
+                char identyfikator = file_selection.SelectedIndex.ToString()[0];
+                MessageBox.Show("/"+identyfikator+"/");
+                if (identyfikator == '0')
+                {
+                    gk.save_file();
+                    MessageBox.Show("Zapisano do pliku obrazRGB.bin");
+                }
+                else
+                {
+                    gk.save_file_5(identyfikator);
+                    MessageBox.Show("Zapisano do pliku obraz5.bin");
+                }
             }
 
         }
         private void LoadFileBin_Click(object sender, RoutedEventArgs e)
         {
 
-            gk.load_file();
+            gk.load_file_5();
         }
     }
 }

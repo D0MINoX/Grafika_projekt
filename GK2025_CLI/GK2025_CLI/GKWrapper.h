@@ -13,5 +13,7 @@ public:
 	void bayer_dithering_gray();
 	void save_file();
 	void load_file();
+	void save_file_5(System::Char identyfikator);
+	void load_file_5();
 };
 

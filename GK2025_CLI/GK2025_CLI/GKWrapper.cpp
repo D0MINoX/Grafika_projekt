@@ -56,4 +56,14 @@ void GKWrapper::load_file()
 {
 	odczytajPlikAPI();
 }
+void GKWrapper::save_file_5(System::Char identyfikator)
+{
+	zapiszPlik5API((char)identyfikator);
+}
+
+
+void GKWrapper::load_file_5()
+{
+	odczytajPlik5API();
+}
 

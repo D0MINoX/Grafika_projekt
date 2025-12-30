@@ -25,3 +25,5 @@ Class GKWrapper: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
     bayer_dithering_gray(): PrivateScope, Public, HideBySig
     save_file(): PrivateScope, Public, HideBySig
     load_file(): PrivateScope, Public, HideBySig
+    save_file_5(Char(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    load_file_5(): PrivateScope, Public, HideBySig

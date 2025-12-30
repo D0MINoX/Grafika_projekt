@@ -31,7 +31,7 @@ void Funkcja3() {
 void Funkcja4() {
 
     //...
-    zapiszPlik5();
+  
     opt_zapiszPlik5();
     SDL_UpdateWindowSurface(window);
 }

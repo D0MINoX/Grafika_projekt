@@ -7,7 +7,7 @@
 #include <fstream>
 #include "SDL.h"
 
-void zapiszPlik5();
+void zapiszPlik5(char identyfikator);
 void odczytajPlik5();
 
 void opt_zapiszPlik5();

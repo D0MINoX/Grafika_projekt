@@ -15,7 +15,8 @@ extern "C" {
 	void bayerDitheringSzaryAPI();
 	void zapiszPlikAPI();
 	void odczytajPlikAPI();
-
+	void zapiszPlik5API(char identyfikator);
+	void odczytajPlik5API();
 #ifdef __cplusplus
 }
 #endif
