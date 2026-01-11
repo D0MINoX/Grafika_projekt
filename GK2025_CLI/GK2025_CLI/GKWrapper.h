@@ -15,5 +15,7 @@ public:
 	void load_file();
 	void save_file_5(System::Char identyfikator);
 	void load_file_5();
+	void opt_save_file_5(System::Char identyfikator);
+	void opt_load_file_5();
 };
 
