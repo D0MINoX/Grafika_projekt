@@ -207,16 +207,26 @@ namespace GK2025_WPF
             }
             else
             {
-                char identyfikator = file_selection.SelectedIndex.ToString()[0];
-                MessageBox.Show("/"+identyfikator+"/");
-                if (identyfikator == '0')
+                int index = file_selection.SelectedIndex;
+
+                MessageBox.Show("/"+index+"/");
+                if (index == 0)
                 {
                     gk.save_file();
                     MessageBox.Show("Zapisano do pliku obrazRGB.bin");
                 }
+                else if (index > 5)
+                {
+                    int obliczonyId = index - 5;
+                    char identyfikator = (char)('0' + obliczonyId);
+                    MessageBox.Show("Przekazuje: " + identyfikator);
+                    gk.opt_save_file_5(identyfikator);
+                    MessageBox.Show("Zapisano do pliku obraz5_opt.bin");
+                }
                 else
                 {
-                    gk.save_file_5(identyfikator);
+                    char identyfikator = index.ToString()[0];
+                    gk.save_file_5((char)identyfikator);
                     MessageBox.Show("Zapisano do pliku obraz5.bin");
                 }
             }
@@ -224,8 +234,15 @@ namespace GK2025_WPF
         }
         private void LoadFileBin_Click(object sender, RoutedEventArgs e)
         {
-
-            gk.load_file_5();
+            int id = file_selection.SelectedIndex;
+            if (id <= 5)
+            {
+                gk.load_file_5();
+            }
+            else
+            {
+                gk.opt_load_file_5();
+            }
         }
     }
 }
