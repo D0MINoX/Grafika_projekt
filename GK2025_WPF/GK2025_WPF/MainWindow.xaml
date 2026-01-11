@@ -53,7 +53,6 @@
             <ComboBoxItem Content="zapis z wykrytą paletą" />
             <ComboBoxItem Content="zapis z szarą paletą median cut" />
             <ComboBoxItem Content="zapis z paletą median cut" />
-            <ComboBoxItem Content="zapis (optymalizowany)" />
             <ComboBoxItem Content="zapis z zredukowaną paletą (optymalizowany)" />
             <ComboBoxItem Content="zapis z zredukowaną paletą szarą (optymalizowany)" />
             <ComboBoxItem Content="zapis z wykrytą paletą (optymalizowany)" />
