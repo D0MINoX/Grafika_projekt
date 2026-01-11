@@ -297,19 +297,19 @@ void odczytajPlik5(){
 /*
 Funkcja opt_zapiszPlik5 ma za zadanie zoptymalizować zapis z funkcji zapiszPlik5.
 */
-void opt_zapiszPlik5(){
+void opt_zapiszPlik5(char identyfikator){
     SDL_Color kolor;
     Uint8 kolor5bit;
 
     Uint16 szerokoscObrazka=szerokosc/2;
     Uint16 wysokoscObrazka=wysokosc/2;
     Uint8 ileBitow=5;
-    char identyfikator='5';
+    char id=identyfikator;
 
     cout<<"zapis pliku 'obraz5_opt.bin' metoda write() - zoptymalizowana"<<endl;
     ofstream wyjscie("obraz5_opt.bin",ios::binary);
 
-    wyjscie.write((char*)&identyfikator,sizeof(char));
+    wyjscie.write((char*)&id,sizeof(char));
     wyjscie.write((char*)&szerokoscObrazka,sizeof(Uint16));
     wyjscie.write((char*)&wysokoscObrazka,sizeof(Uint16));
     wyjscie.write((char*)&ileBitow,sizeof(Uint8));
@@ -317,7 +317,7 @@ void opt_zapiszPlik5(){
     Uint32 bufor;
     int aktualneBity;
 
-    switch(identyfikator){
+    switch(id){
         case '1':
             bufor = 0;
             aktualneBity = 0;

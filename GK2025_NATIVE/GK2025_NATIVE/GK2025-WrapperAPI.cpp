@@ -119,3 +119,11 @@ void odczytajPlik5API()
 {
     odczytajPlik5();
 }
+void opt_zapiszPlik5API(char identyfikator)
+{
+    opt_zapiszPlik5(identyfikator);
+}
+void opt_odczytajPlik5API()
+{
+    opt_odczytajPlik5();
+}
