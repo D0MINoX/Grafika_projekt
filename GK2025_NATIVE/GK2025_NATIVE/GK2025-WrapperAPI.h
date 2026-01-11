@@ -17,6 +17,8 @@ extern "C" {
 	void odczytajPlikAPI();
 	void zapiszPlik5API(char identyfikator);
 	void odczytajPlik5API();
+	void opt_zapiszPlik5API(char identyfikator);
+	void opt_odczytajPlik5API();
 #ifdef __cplusplus
 }
 #endif
