@@ -32,7 +32,7 @@ void Funkcja4() {
 
     //...
   
-    opt_zapiszPlik5();
+    //opt_zapiszPlik5();
     SDL_UpdateWindowSurface(window);
 }
 
@@ -57,7 +57,7 @@ void Funkcja7() {
 
 
     odczytajPlik5();
-    opt_odczytajPlik5();
+    //opt_odczytajPlik5();
     SDL_UpdateWindowSurface(window);
 }
 
