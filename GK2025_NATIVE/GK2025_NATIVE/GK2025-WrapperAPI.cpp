@@ -102,28 +102,28 @@ void bayerDitheringSzaryAPI()
     dithering_bayer();
 }
 
-void zapiszPlikAPI()
+void zapiszPlikAPI(const char* path)
 {
-	zapiszPlik();
+	zapiszPlik(path);
 }
 
-void odczytajPlikAPI()
+void odczytajPlikAPI(const char* path)
 {
-	odczytajPlik();
+	odczytajPlik(path);
 }
-void zapiszPlik5API(char identyfikator)
+void zapiszPlik5API(char identyfikator, const char* path)
 {
-    zapiszPlik5(identyfikator);
+    zapiszPlik5(identyfikator,path);
 }
-void odczytajPlik5API()
+void odczytajPlik5API(const char* path)
 {
-    odczytajPlik5();
+    odczytajPlik5(path);
 }
-void opt_zapiszPlik5API(char identyfikator)
+void opt_zapiszPlik5API(char identyfikator, const char* path)
 {
-    opt_zapiszPlik5(identyfikator);
+    opt_zapiszPlik5(identyfikator,path);
 }
-void opt_odczytajPlik5API()
+void opt_odczytajPlik5API(const char* path)
 {
-    opt_odczytajPlik5();
+    opt_odczytajPlik5(path);
 }

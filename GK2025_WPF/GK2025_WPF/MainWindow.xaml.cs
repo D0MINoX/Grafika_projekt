@@ -208,41 +208,68 @@ namespace GK2025_WPF
             else
             {
                 int index = file_selection.SelectedIndex;
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
 
-                MessageBox.Show("/"+index+"/");
-                if (index == 0)
+                // Konfiguracja okna zapisu
+                saveFileDialog.Filter = "Pliki binarne (*.bin)|*.bin";
+                saveFileDialog.DefaultExt = "bin";
+                saveFileDialog.FileName = "Eksport_Danych"; // Domyślna nazwa pliku
+
+                if (saveFileDialog.ShowDialog() == true)
                 {
-                    gk.save_file();
-                    MessageBox.Show("Zapisano do pliku obrazRGB.bin");
-                }
-                else if (index > 5)
-                {
-                    int obliczonyId = index - 5;
-                    char identyfikator = (char)('0' + obliczonyId);
-                    MessageBox.Show("Przekazuje: " + identyfikator);
-                    gk.opt_save_file_5(identyfikator);
-                    MessageBox.Show("Zapisano do pliku obraz5_opt.bin");
-                }
-                else
-                {
-                    char identyfikator = index.ToString()[0];
-                    gk.save_file_5((char)identyfikator);
-                    MessageBox.Show("Zapisano do pliku obraz5.bin");
+                    MessageBox.Show("/" + index + "/");
+                    if (index == 0)
+                    {
+                        gk.save_file(saveFileDialog.FileName);
+                        
+                    }
+                    else if (index > 5)
+                    {
+                        int obliczonyId = index - 5;
+                        char identyfikator = (char)('0' + obliczonyId);
+                        MessageBox.Show("Przekazuje: " + identyfikator);
+                        gk.opt_save_file_5(identyfikator,saveFileDialog.FileName);
+                      
+                    }
+                    else
+                    {
+                        char identyfikator = index.ToString()[0];
+                        gk.save_file_5((char)identyfikator,saveFileDialog.FileName);
+                        
+                    }
+                    MessageBox.Show("Zapisano do pliku" + saveFileDialog.FileName);
                 }
             }
 
         }
         private void LoadFileBin_Click(object sender, RoutedEventArgs e)
         {
-            int id = file_selection.SelectedIndex;
-            if (id <= 5)
+           
+        }
+
+        private void ChooseFile_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "Pliki binarne (*.bin)|*.bin";
+            dialog.Title = "Wybierz plik binarny obrazu";
+
+            if (dialog.ShowDialog() == true)
             {
-                gk.load_file_5();
-            }
-            else
-            {
-                gk.opt_load_file_5();
-            }
+               
+                int id = file_load_selection.SelectedIndex;
+                if (id == 0)
+                {
+                   gk.load_file(dialog.FileName);
+                }
+                else if(id == 1)
+                {
+                    gk.load_file_5(dialog.FileName);
+                }
+                else if(id == 2)
+                {
+                    gk.opt_load_file_5(dialog.FileName);
+                }
+                }
         }
     }
 }

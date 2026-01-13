@@ -7,9 +7,9 @@
 #include <fstream>
 #include "SDL.h"
 
-void zapiszPlik5(char identyfikator);
-void odczytajPlik5();
-
-void opt_zapiszPlik5();
-void opt_odczytajPlik5();
+void zapiszPlik5(char identyfikator,const char* path);
+void odczytajPlik5(char const* path);
+void odczytajPlik(char const* path);
+void opt_zapiszPlik5(const char* path);
+void opt_odczytajPlik5(char const* path);
 #endif // GK2025_PLIKI_H_INCLUDED

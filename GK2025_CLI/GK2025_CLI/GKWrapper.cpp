@@ -47,33 +47,33 @@ void GKWrapper::bayer_dithering_gray()
 	bayerDitheringSzaryAPI();
 }
 
-void GKWrapper::save_file()
+void GKWrapper::save_file(System::String^ path)
 {
-	zapiszPlikAPI();
+	zapiszPlikAPI((const char*)(System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(path)).ToPointer());
 }
 
-void GKWrapper::load_file()
+void GKWrapper::load_file(System::String^ path)
 {
-	odczytajPlikAPI();
+	odczytajPlikAPI((const char*)(System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(path)).ToPointer());
 }
-void GKWrapper::save_file_5(System::Char identyfikator)
+void GKWrapper::save_file_5(System::Char identyfikator,System::String^ path)
 {
-	zapiszPlik5API((char)identyfikator);
-}
-
-
-void GKWrapper::load_file_5()
-{
-	odczytajPlik5API();
+	zapiszPlik5API((char)identyfikator, (const char*)(System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(path)).ToPointer());
 }
 
-void GKWrapper::opt_save_file_5(System::Char identyfikator)
+
+void GKWrapper::load_file_5(System::String^ path)
 {
-	opt_zapiszPlik5API((char)identyfikator);
+	odczytajPlik5API((const char*)(System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(path)).ToPointer());
 }
 
-void GKWrapper::opt_load_file_5()
+void GKWrapper::opt_save_file_5(System::Char identyfikator,System::String^ path)
 {
-	opt_odczytajPlik5API();
+	opt_zapiszPlik5API((char)identyfikator, (const char*)(System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(path)).ToPointer());
+}
+
+void GKWrapper::opt_load_file_5(System::String^ path)
+{
+	opt_odczytajPlik5API((const char*)(System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(path)).ToPointer());
 }
 

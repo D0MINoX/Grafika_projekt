@@ -13,12 +13,12 @@ extern "C" {
 	void paletaMedianCutSzaryAPI();
 	void bayerDitheringAPI();
 	void bayerDitheringSzaryAPI();
-	void zapiszPlikAPI();
-	void odczytajPlikAPI();
-	void zapiszPlik5API(char identyfikator);
-	void odczytajPlik5API();
-	void opt_zapiszPlik5API(char identyfikator);
-	void opt_odczytajPlik5API();
+	void zapiszPlikAPI(char const* path);
+	void odczytajPlikAPI(char const* path);
+	void zapiszPlik5API(char identyfikator, char const* path);
+	void odczytajPlik5API(char const* path);
+	void opt_zapiszPlik5API(char identyfikator, char const* path);
+	void opt_odczytajPlik5API(char const* path);
 #ifdef __cplusplus
 }
 #endif

@@ -11,11 +11,11 @@ public:
 	void palette_median_cut_gray();
 	void bayer_dithering();
 	void bayer_dithering_gray();
-	void save_file();
-	void load_file();
-	void save_file_5(System::Char identyfikator);
-	void load_file_5();
-	void opt_save_file_5(System::Char identyfikator);
-	void opt_load_file_5();
+	void save_file(System::String^ path);
+	void load_file(System::String^ path);
+	void save_file_5(System::Char identyfikator, System::String^ path);
+	void load_file_5(System::String^ path);
+	void opt_save_file_5(System::Char identyfikator, System::String^ path);
+	void opt_load_file_5(System::String^ path);
 };
 

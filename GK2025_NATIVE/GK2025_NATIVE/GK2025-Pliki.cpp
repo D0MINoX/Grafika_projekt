@@ -37,14 +37,14 @@ Funkcja zapiszPlik zapisuje dane o obrazie w pliku binarnym obrazRGB.bin za pomo
 
 */
 
-void zapiszPlik(){
+void zapiszPlik(const char* path){
      SDL_Color kolor;
     Uint16 szerokoscObrazka=szerokosc/2;
     Uint16 wysokoscObrazka=wysokosc/2;
     Uint8 ileBitow=24;
     char identyfikator[]="DG";
     cout<<"zapisujemy plik'obrazRGB.bin' uzywajac write()"<<endl;
-    ofstream wyjscie("obrazRGB.bin",ios::binary);
+    ofstream wyjscie(path,ios::binary);
     wyjscie.write((char*)&identyfikator,sizeof(char)*2);
     wyjscie.write((char*)&szerokoscObrazka,sizeof(Uint16));
     wyjscie.write((char*)&wysokoscObrazka,sizeof(Uint16));
@@ -67,14 +67,14 @@ void zapiszPlik(){
 Funkcja odczytajPlik odczytuje dane o obrazie z pliku binarnego obrazRGB.bin za pomoc¹ funkcji read
 */
 
-void odczytajPlik(){
+void odczytajPlik(char const* path){
     SDL_Color kolor;
     Uint16 szerokoscObrazka=szerokosc/2;
     Uint16 wysokoscObrazka=wysokosc/2;
     Uint8 ileBitow=24;
     char identyfikator[]="  ";
     cout<<"odczytujemy plik'obrazRGB.bin' uzywajac read()"<<endl;
-    ifstream wejscie("obrazRGB.bin",ios::binary);
+    ifstream wejscie(path,ios::binary);
      wejscie.read((char*)&identyfikator,sizeof(char)*2);
     wejscie.read((char*)&szerokoscObrazka,sizeof(Uint16));
     wejscie.read((char*)&wysokoscObrazka,sizeof(Uint16));
@@ -91,11 +91,12 @@ void odczytajPlik(){
     }
     SDL_UpdateWindowSurface(window);
 }
+
 /*
 Funkcja zapiszPlik5 zapisuje dane o obrazie do pliku binarnego obraz5.bin, jednoczeœnie konwertuj¹c dane na palete 5-bitow¹
 */
 
-void zapiszPlik5(char identyfikator) {
+void zapiszPlik5(char identyfikator,const char* path) {
     SDL_Color kolor;
     Uint8 kolor5bit;
     Uint16 szerokoscObrazka=szerokosc/2;
@@ -103,7 +104,7 @@ void zapiszPlik5(char identyfikator) {
     Uint8 ileBitow=5;
     char id = identyfikator;
     cout<<"zapis pliku 'obraz5.bin' metoda write()"<<endl;
-    ofstream wyjscie("obraz5.bin",ios::binary);
+    ofstream wyjscie(path,ios::binary);
     wyjscie.write((char*)&id,sizeof(char));
     wyjscie.write((char*)&szerokoscObrazka,sizeof(Uint16));
     wyjscie.write((char*)&wysokoscObrazka,sizeof(Uint16));
@@ -185,7 +186,7 @@ void zapiszPlik5(char identyfikator) {
 Funkcja odczytajPlik5 odczytuje dane o obrazie z pliku obraz5.bin jednoczeœnie konwertuj¹c obraz z zredukowanej palety 5-bitowej do pe³nej palety 24-bitowej dla poprawnie dzia³aj¹cego wyœwietlania
 */
 
-void odczytajPlik5(){
+void odczytajPlik5(char const* path){
     SDL_Color kolor;
     Uint8 kolor5bit;
     Uint16 szerokoscObrazka=szerokosc/2;
@@ -193,7 +194,7 @@ void odczytajPlik5(){
     Uint8 ileBitow=24;
     char identyfikator=' ';
     cout<<"odczytujemy plik'obraz5.bin' uzywajac read()"<<endl;
-    ifstream wejscie("obraz5.bin",ios::binary);
+    ifstream wejscie(path,ios::binary);
 
      wejscie.read((char*)&identyfikator,sizeof(char));
     wejscie.read((char*)&szerokoscObrazka,sizeof(Uint16));
@@ -297,7 +298,7 @@ void odczytajPlik5(){
 /*
 Funkcja opt_zapiszPlik5 ma za zadanie zoptymalizować zapis z funkcji zapiszPlik5.
 */
-void opt_zapiszPlik5(char identyfikator){
+void opt_zapiszPlik5(char identyfikator, const char* path){
     SDL_Color kolor;
     Uint8 kolor5bit;
 
@@ -307,7 +308,7 @@ void opt_zapiszPlik5(char identyfikator){
     char id=identyfikator;
 
     cout<<"zapis pliku 'obraz5_opt.bin' metoda write() - zoptymalizowana"<<endl;
-    ofstream wyjscie("obraz5_opt.bin",ios::binary);
+    ofstream wyjscie(path,ios::binary);
 
     wyjscie.write((char*)&id,sizeof(char));
     wyjscie.write((char*)&szerokoscObrazka,sizeof(Uint16));
@@ -495,7 +496,7 @@ void opt_zapiszPlik5(char identyfikator){
 Funkcja opt_odczytajPlik5 ma za zadanie odczytać plik zapisany w sposób zoptymalizowany.
 */
 
-void opt_odczytajPlik5(){
+void opt_odczytajPlik5(char const* path){
     SDL_Color kolor;
     Uint8 kolor5bit;
 
@@ -506,7 +507,7 @@ void opt_odczytajPlik5(){
     char identyfikator=' ';
 
     cout<<"odczytujemy plik'obraz5_opt.bin' uzywajac read()"<<endl;
-    ifstream wejscie("obraz5_opt.bin",ios::binary);
+    ifstream wejscie( path,ios::binary);
 
     wejscie.read((char*)&identyfikator,sizeof(char));
     wejscie.read((char*)&szerokoscObrazka,sizeof(Uint16));

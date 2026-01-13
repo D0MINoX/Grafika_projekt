@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GK2025_WPF"
         mc:Ignorable="d"
-        Title="Procesor Obrazu" Height="520" Width="900"
+        Title="Procesor Obrazu" Height="600" Width="900"
         Background="#1E1E1E">
 
     <Grid Margin="15">
@@ -16,6 +16,8 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -78,10 +80,10 @@
         </GroupBox>
 
         <!-- ZAPIS BINARNY -->
-        <GroupBox Header="Pliki binarne" Grid.Column="1" Grid.Row="4" Foreground="White">
+        <GroupBox Header="Pliki binarne zapis" Grid.Column="1" Grid.Row="4" Foreground="White">
             <StackPanel Margin="10" Orientation="Horizontal">
                 <Button Content="Zapisz" Click="SafeFileBin_Click" Width="120" Height="35"/>
-                <Button Content="Odczytaj" Click="LoadFileBin_Click" Width="120" Height="35" Margin="10,0,0,0"/>
+                
                 <ComboBox x:Name="file_selection" Width="350" Margin="10,0,0,0">
                     <ComboBoxItem Content="zapis" />
                     <ComboBoxItem Content="zapis z zredukowaną paletą" />
@@ -97,6 +99,16 @@
                 </ComboBox>
             </StackPanel>
         </GroupBox>
-
+        <GroupBox Header="Pliki binarne odczyt" Grid.Column="1" Grid.Row="5" Foreground="White">
+            <StackPanel Margin="10" Orientation="Horizontal">
+                <Button Content="Wybierz plik" Click="ChooseFile_Click"  Width="180" Height="35" Margin="10,0,0,0"/>
+                <ComboBox x:Name="file_load_selection" Width="350" Margin="10,0,0,0">
+                    <ComboBoxItem Content="odczyt" />
+                    <ComboBoxItem Content="odczyt plików z zredukowanymi paletami" />
+                    <ComboBoxItem Content="zoptymalizowany odczyt plików z zredukowanymi paletami " />
+                </ComboBox>
+            </StackPanel>
+        </GroupBox>
+      
     </Grid>
 </Window>
